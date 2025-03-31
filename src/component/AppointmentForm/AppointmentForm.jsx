@@ -6,7 +6,7 @@ const AppointmentForm = ({formData, handleChange, goNext}) => {
     
     useEffect(() => {
         if (formData.form.date) {
-            fetchGetSpecializations();
+            // fetchGetSpecializations();
         }
     }, [formData.form.date]);
 
@@ -53,7 +53,10 @@ const AppointmentForm = ({formData, handleChange, goNext}) => {
                     </label>
                     <select className="form-select" onChange={handleChange} id="department" name="department">
                         <option>-Select All-</option>
-                        {departmentList}
+                        {/* {departmentList} */}
+                        <option>Khoa Tam Than</option>
+                        <option>Khoa Xuong Khop</option>
+                        <option>Khoa Tim Mach</option>
                     </select>
                 </div>
             )}

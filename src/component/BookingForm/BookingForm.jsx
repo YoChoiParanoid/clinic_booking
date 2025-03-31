@@ -43,7 +43,7 @@ export default function BookingForm() {
 
             {step === 2 && (<AppointmentForm handleChange={handleChange} formData={formData} goNext={goNext}/>)}
 
-            {step === 3 && <h1>Thanh toán mẹ m đi!!!</h1>}
+            {step === 3 && <h1>Thanh toán đi!!!</h1>}
         </div>
     );
 }
